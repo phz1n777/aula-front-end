@@ -1,0 +1,11 @@
+@use 'mixins';
+@use 'variable';
+
+body { 
+    @include mixins.zero-config(0,0);
+}
+
+.container {
+    @include mixins.div-size(80%, 100vh);
+    @include mixins.div-size(variable.$primar)
+}
